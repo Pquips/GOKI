@@ -1,0 +1,42 @@
+#custom composition
+#Amir Rose
+use_bpm 160
+
+live_loop :gang do
+  play:A1
+  sleep 0.5
+  play:C2
+  sleep 0.5
+  play:A2
+  sleep 0.5
+  play:A1
+  sleep 0.5
+  play:C2
+  sleep 0.5
+  play:A2
+  sleep 0.5
+  play:A1
+  sleep 0.5
+  play:C2
+  sleep 0.5
+  play:A1
+  sleep 0.5
+  play:C2
+  sleep 0.5
+  play:A2
+  sleep 0.5
+  play:A1
+  sleep 0.5
+  play:C2
+  sleep 0.5
+  play:A2
+  sleep 0.5
+  play:A1
+  sleep 0.25
+  play:A1
+  sleep 0.25
+  play:A1
+  sleep 0.25
+  play:A1
+  sleep 0.25
+end
