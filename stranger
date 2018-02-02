@@ -1,0 +1,41 @@
+use_bpm 160
+
+live_loop :gang do
+  
+  with_synth :subpulse do
+    4.times do
+      play:C
+      sleep 0.5
+      play:E
+      sleep 0.5
+      play:G
+      sleep 0.5
+      play:B
+      sleep 0.5
+      play:C5
+      sleep 0.5
+      play:B
+      sleep 0.5
+      play:G
+      sleep 0.5
+      play:E
+      sleep 0.5
+    end
+    play:B
+    sleep 0.5
+    play:E
+    sleep 0.5
+    play:G
+    sleep 0.5
+    play:B
+    sleep 0.5
+    play:C5
+    sleep 0.5
+    play:B
+    sleep 0.5
+    play:G
+    sleep 0.5
+    play:E
+    sleep 0.5
+  end
+end
