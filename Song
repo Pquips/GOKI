@@ -1,0 +1,50 @@
+# Name: Ring Ding
+# Composed by Amir
+# BPM = 165
+use_bpm 165
+
+goonk = :hihat
+
+dooky = 0.1
+
+8.times do
+  
+  sample:bd_ada, amp: dooky
+  sleep 0.375
+  sample:bd_ada, amp: dooky
+  sleep 0.375
+  sample:bd_ada, amp: dooky
+  sleep 0.375
+  sample:bd_808, amp: dooky
+  sleep 0.375
+  sample:bd_ada, amp: dooky
+  sleep 0.375
+  sample:bd_ada, amp: dooky
+  sleep 0.375
+  sample:bd_ada, amp: dooky
+  sleep 0.375
+  sample:bd_808, amp: dooky
+  dooky = (dooky+0.1)
+end
+
+live_loop :goku do
+  with_synth goonk do
+    sample :elec_triangle,amp: 1.75
+    sleep 0.5
+  end
+end
+
+live_loop :melody do
+  sample:perc_bell, apm: 2
+  sleep 0.5
+  sample:perc_bell, apm: 2
+  sleep 0.5
+  sample:perc_till, apm: 2
+  sleep 1
+  sample:perc_till , apm: 2
+  sleep 1
+  sample:perc_till , apm: 2
+  sleep 1
+end
+
+
