@@ -1,0 +1,142 @@
+x = :piano
+
+z = :pretty_bell
+
+b = 95
+
+a = 1
+
+4.times do
+  with_synth x do
+    
+    use_bpm b
+    8.times do
+      play :G3, amp: a
+      play :Bb3, amp: a
+      play :D, amp: a
+      sleep 0.5
+    end
+    8.times do
+      play :F3, amp: a
+      play :A3, amp: a
+      play :D, amp: a
+      sleep 0.5
+    end
+    
+    a = (a+0.5)
+    b = (b+10)
+    
+  end
+end
+
+
+live_loop :melody do
+  
+  with_synth x do
+    2.times do
+      8.times do
+        play :G3, amp: a
+        play :Bb3, amp: a
+        play :D, amp: a
+        sleep 0.5
+      end
+      
+      8.times do
+        play :F3, amp: a
+        play :A3, amp: a
+        play :D, amp: a
+        sleep 0.5
+      end
+    end
+    
+    8.times do
+      play :Eb, amp: a
+      play :Bb3, amp: a
+      play :G3, amp: a
+      sleep 0.5
+    end
+    
+    11.times do
+      play :D, amp: a
+      play :Bb3, amp: a
+      play :F3, amp: a
+      sleep 0.5
+    end
+    
+    3.times do
+      play :D, amp: a
+      play :C, amp: a
+      play :G3, amp: a
+      sleep 0.5
+    end
+    
+    10.times do
+      play :D, amp: a
+      play :A3, amp: a
+      play :F3, amp: a
+      sleep 0.5
+    end
+  end
+end
+live_loop :bell do
+  
+  with_synth z do
+    
+    sleep 0.5
+    play :D, amp: a
+    sleep 0.5
+    play :D, amp: a
+    sleep 0.5
+    play :D, amp: a
+    sleep 0.5
+    play :D, amp: a
+    sleep 1.5
+    play :D, amp: a
+    sleep 0.5
+    play :C, amp: a
+    sleep 1
+    play :Bb3, amp: a
+    sleep 0.5
+    play :F3, amp: a
+    sleep 2
+    play :Bb3, amp: a
+    sleep 0.5
+    play :D, amp: a
+    sleep 1
+    play :D, amp: a
+    sleep 1
+    play :C, amp: a
+    sleep 0.5
+    play :Bb3, amp: a
+    sleep 1
+    play :C, amp: a
+    sleep 5
+    play :Bb3, amp: a
+    sleep 0.5
+    play :Eb, amp: a
+    sleep 1
+    play :Eb, amp: a
+    sleep 1
+    play :Eb, amp: a
+    sleep 0.5
+    play :D, amp: a
+    sleep 1
+    play :C, amp: a
+    sleep 1
+    play :Bb3, amp: a
+    sleep 2
+    play :Bb3, amp: a
+    sleep 0.5
+    play :D, amp: a
+    sleep 1
+    play :D, amp: a
+    sleep 0.5
+    play :C, amp: a
+    sleep 1
+    play :Bb3, amp: a
+    sleep 0.5
+    play :D, amp: a
+    sleep 5
+  end
+  
+end
