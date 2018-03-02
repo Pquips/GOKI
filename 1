@@ -1,14 +1,24 @@
+# Song Name: Pokemon Theme Song
 
+# Sheet Music: https://musescore.com/user/6217456/scores/2525106
+
+# BPM Used: https://musescore.com/user/6217456/scores/2525106
+
+# I thought it sounded better 10 bpm faster
+
+use_bpm 135
 
 1.times do
-  with_synth :piano do
   
+  with_synth :piano do
+    
     8.times do
       play :G3, amp: 3
       play :Bb3, amp: 3
       play :D, amp: 3
       sleep 0.5
     end
+    
     8.times do
       play :F3, amp: 3
       play :A3, amp: 3
@@ -17,13 +27,15 @@
     end
     
   end
+  
 end
-
 
 live_loop :melody do
   
   with_synth :piano do
+    
     2.times do
+      
       8.times do
         play :G3, amp: 3
         play :Bb3, amp: 3
@@ -37,6 +49,7 @@ live_loop :melody do
         play :D, amp: 3
         sleep 0.5
       end
+      
     end
     
     8.times do
@@ -66,12 +79,14 @@ live_loop :melody do
       play :F3, amp: 3
       sleep 0.5
     end
+    
   end
+  
 end
+
 live_loop :bell do
   
   with_synth :pretty_bell do
-    
     sleep 0.5
     play :D, amp: 3
     sleep 0.5
@@ -127,7 +142,7 @@ live_loop :bell do
     sleep 0.5
     play :D, amp: 3
     sleep 5
+    
   end
   
 end
-
